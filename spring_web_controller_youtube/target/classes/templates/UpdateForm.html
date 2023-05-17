@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Page</title>
+</head>
+<body>
+<form action="saveUpdateData" method="POST" th:each="allData : ${updateData}">
+<pre>
+id:<input type="text" name="id" th:value = "${allData.id}"/><br>
+Name:<input type="text" name="name" th:value = "${allData.name}"/><br>
+Address:<input type="text" name="address"  th:value = "${allData.address}"/><br>
+<input type="submit" value="Save" />
+<pre>
+</form>
+</body>
+</html>

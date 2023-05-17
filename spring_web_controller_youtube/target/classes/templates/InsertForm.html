@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="insertData" method="POST">
+<pre>
+Name:<input type="text" name="name" /><br>
+Address:<input type="text" name="address" /><br>
+<input type="submit" value="Save" />
+<pre>
+</form>
+<div th:text="${msg}"></div>
+</body>
+</html>
